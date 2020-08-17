@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UiStyleToggleService } from './services/ui-style-toggle.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor(
+    private uiStyleToggleService: UiStyleToggleService
+  ) {}
+
   title = 'portfolio';
+
+  toggleTheme() {
+    this.uiStyleToggleService.toggle();
+  }
 }
