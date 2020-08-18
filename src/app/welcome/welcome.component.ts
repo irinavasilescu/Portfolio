@@ -1,15 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { UiStyleToggleService } from '../services/ui-style-toggle.service';
 
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.css']
+	selector: 'welcome',
+	templateUrl: './welcome.component.html',
+	styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() { }
+	constructor(
+		private uiStyleToggleService: UiStyleToggleService
+	) { }
 
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {
+	}
 
+	toggleTheme() {
+		this.uiStyleToggleService.toggle();
+	}
 }
