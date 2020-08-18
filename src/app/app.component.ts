@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UiStyleToggleService } from './services/ui-style-toggle.service';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
 	selector: 'app-root',
@@ -9,14 +8,21 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
 
+	darkTheme: boolean;
+
 	constructor(
 		private uiStyleToggleService: UiStyleToggleService
 	) { }
 
-	title = 'portfolio';
-	faCoffee = faCoffee;
+	title = 'My Portfolio';
 
 	toggleTheme() {
 		this.uiStyleToggleService.toggle();
+	}
+
+	changeLightbulb() {
+		this.uiStyleToggleService.theme$.subscribe(resp => {
+			this.darkTheme = resp !== 1;
+		});
 	}
 }

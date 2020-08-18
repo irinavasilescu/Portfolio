@@ -1,3 +1,86 @@
 .background {
     background-color: var(--background-color);
 }
+
+// =================================
+// TRANSITION BETWEEN IMAGES & ICONS
+// =================================
+
+#crossfade {
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+#crossfade img{
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;    
+    transition: opacity 2s ease-in-out;
+}
+ 
+.transparent {
+    opacity: 0;
+}
+
+// =================================
+//          TOGGLE BUTTON
+// =================================
+
+.switch {
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 55px;
+    margin-bottom: 30px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    transition: .5s;
+    border: 3px solid white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    bottom: 14px;
+    top: 8px;
+    background-color: #f18677;
+    transition: .5s;
+}
+
+input:checked + .slider {
+    background-color: white;
+}
+
+input:checked + .slider:before {
+    transform: translateX(47px) rotateZ(45deg);
+    background: #8a8a8a;
+}
+
+.slider.round {
+    border-radius: 35px;
+}
+
+.slider.round:before {
+    width: 43%;
+    height: 43%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform: rotateZ(-45deg);
+}

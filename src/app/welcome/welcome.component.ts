@@ -4,7 +4,7 @@ import { UiStyleToggleService } from '../services/ui-style-toggle.service';
 @Component({
 	selector: 'welcome',
 	templateUrl: './welcome.component.html',
-	styleUrls: ['./welcome.component.scss']
+	styleUrls: ['./welcome.component.scss', './../app.component.scss']
 })
 export class WelcomeComponent implements OnInit {
 
@@ -26,7 +26,6 @@ export class WelcomeComponent implements OnInit {
 	changeLightbulb() {
 		this.uiStyleToggleService.theme$.subscribe(resp => {
 			this.darkTheme = resp !== 1;
-			this.lightbulb = resp === 1 ? './../../assets/bulb_light.png' : './../../assets/bulb_dark.png';
 		});
 	}
 }
