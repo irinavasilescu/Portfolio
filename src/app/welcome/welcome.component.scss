@@ -1,3 +1,5 @@
+// TOGGLE BUTTON
+
 .switch {
     position: relative;
     display: block;
@@ -51,4 +53,26 @@ input:checked + .slider:before {
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     transform: rotateZ(-45deg);
+}
+
+// TRANSITION BETWEEN LIGHTBULBS
+
+#crossfade {
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+#crossfade img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;    
+    transition: opacity 2s ease-in-out;
+}
+ 
+.transparent {
+    opacity: 0;
 }
