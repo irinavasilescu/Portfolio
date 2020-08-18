@@ -32,17 +32,17 @@
     content: "";
     bottom: 14px;
     top: 8px;
-    background-color: lightgrey;
+    background-color: #fabb1c;
     transition: .5s;
 }
 
 input:checked + .slider {
-    background-color: black;
+    background-color: white;
 }
 
 input:checked + .slider:before {
     transform: translateX(47px) rotateZ(45deg);
-    background: yellow;
+    background: #616161;
 }
 
 .slider.round {

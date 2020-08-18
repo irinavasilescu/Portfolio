@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UiStyleToggleService } from './services/ui-style-toggle.service';
 
 @Component({

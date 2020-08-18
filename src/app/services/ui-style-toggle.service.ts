@@ -19,11 +19,7 @@ export class UiStyleToggleService {
 	constructor(private storage: StorageService) {}
 
 	public setThemeOnStart() {
-		if (this.isDarkThemeSelected()) {
-			this.setDarkTheme();
-		} else {
-			this.setLightTheme();
-		}
+		this.setLightTheme();
 		setTimeout(() => {
 			document.body.classList.add('animate-colors-transition');
 		}, 500);
@@ -37,14 +33,8 @@ export class UiStyleToggleService {
 		}
 	}
 
-	private isDarkThemeSelected(): boolean {
-		this.darkThemeSelected = this.storage.get(this.THEME_KEY) === this.DARK_THEME_VALUE;
-		return this.darkThemeSelected;
-	}
-
 	private setLightTheme() {
 		console.log('LIGHT THEME');
-		this.storage.set(this.THEME_KEY, this.LIGHT_THEME_VALUE);
 		document.body.classList.remove(this.DARK_THEME_CLASS_NAME);
 		this.darkThemeSelected = false;
 		this.theme$.next(ThemeMode.LIGHT);
@@ -52,7 +42,6 @@ export class UiStyleToggleService {
 
 	private setDarkTheme() {
 		console.log('DARK THEME');
-		this.storage.set(this.THEME_KEY, this.DARK_THEME_VALUE);
 		document.body.classList.add(this.DARK_THEME_CLASS_NAME);
 		this.darkThemeSelected = true;
 		this.theme$.next(ThemeMode.DARK);
