@@ -19,10 +19,6 @@ export class WelcomeComponent implements OnInit {
 		this.changeLightbulb();
 	}
 
-	toggleTheme() {
-		this.uiStyleToggleService.toggle();
-	}
-
 	changeLightbulb() {
 		this.uiStyleToggleService.theme$.subscribe(resp => {
 			this.darkTheme = resp !== 1;

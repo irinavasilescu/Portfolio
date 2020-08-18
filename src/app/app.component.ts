@@ -23,4 +23,8 @@ export class AppComponent {
 	isDarkTheme() {
 		return this.uiStyleToggleService.theme$.value ===  ThemeMode.DARK;
 	}
+
+	toggleTheme() {
+		this.uiStyleToggleService.toggle();
+	}
 }
