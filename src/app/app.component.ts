@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { UiStyleToggleService } from './services/ui-style-toggle.service';
 
+export enum ThemeMode {
+	DARK, LIGHT
+}
+
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
@@ -20,9 +24,7 @@ export class AppComponent {
 		this.uiStyleToggleService.toggle();
 	}
 
-	changeLightbulb() {
-		this.uiStyleToggleService.theme$.subscribe(resp => {
-			this.darkTheme = resp !== 1;
-		});
+	isDarkTheme() {
+		return this.uiStyleToggleService.theme$.value ===  ThemeMode.DARK;
 	}
 }
