@@ -30,7 +30,7 @@
     content: "";
     bottom: 14px;
     top: 8px;
-    background-color: #fabb1c;
+    background-color: #f18677;
     transition: .5s;
 }
 
@@ -40,7 +40,7 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(47px) rotateZ(45deg);
-    background: #616161;
+    background: #8a8a8a;
 }
 
 .slider.round {

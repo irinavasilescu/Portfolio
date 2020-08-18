@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UiStyleToggleService } from './services/ui-style-toggle.service';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
 	selector: 'app-root',
@@ -13,6 +14,7 @@ export class AppComponent {
 	) { }
 
 	title = 'portfolio';
+	faCoffee = faCoffee;
 
 	toggleTheme() {
 		this.uiStyleToggleService.toggle();

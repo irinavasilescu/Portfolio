@@ -8,6 +8,7 @@ import { MaterialModule } from '../app/material/material.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { UiStyleToggleService } from "./services/ui-style-toggle.service";
 import { StorageService } from "./services/storage.service";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 export function themeFactory(themeService: UiStyleToggleService) {
 	return () => themeService.setThemeOnStart();
@@ -23,7 +24,8 @@ export function themeFactory(themeService: UiStyleToggleService) {
 		AppRoutingModule,
 		BrowserAnimationsModule,
 		NgbModule,
-		MaterialModule
+		MaterialModule,
+		FontAwesomeModule
 	],
 	providers: [
 		UiStyleToggleService,
