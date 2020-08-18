@@ -8,14 +8,23 @@ import { UiStyleToggleService } from '../services/ui-style-toggle.service';
 })
 export class WelcomeComponent implements OnInit {
 
+	lightbulb: string;
+
 	constructor(
 		private uiStyleToggleService: UiStyleToggleService
 	) { }
 
 	ngOnInit(): void {
+		this.changeLightbulb();
 	}
 
 	toggleTheme() {
 		this.uiStyleToggleService.toggle();
+	}
+
+	changeLightbulb() {
+		this.uiStyleToggleService.theme$.subscribe(resp => {
+			this.lightbulb = resp === 1 ? './../../assets/bulb_light.png' : './../../assets/bulb_dark.png';
+		});
 	}
 }
