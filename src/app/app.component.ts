@@ -20,10 +20,6 @@ export class AppComponent {
 
 	title = 'My Portfolio';
 
-	toggleTheme() {
-		this.uiStyleToggleService.toggle();
-	}
-
 	isDarkTheme() {
 		return this.uiStyleToggleService.theme$.value ===  ThemeMode.DARK;
 	}
