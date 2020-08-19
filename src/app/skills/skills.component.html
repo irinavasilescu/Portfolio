@@ -1,11 +1,11 @@
-<body [ngClass]="{'background-skills-light': isDarkTheme(), 'background-skills-dark': !isDarkTheme()}">
-    <br><br><br>
-    <div>
-        <canvas baseChart
-          [data]="doughnutChartData"
-          [labels]="doughnutChartLabels"
-          [chartType]="doughnutChartType"
-          [colors]="donutColors">
-        </canvas>
-    </div>
+<body [ngClass]="{'background-skills-light': !isDarkTheme(), 'background-skills-dark': isDarkTheme()}">
+	<br><br><br>
+	<div class="row" style="display: flex; flex-wrap: wrap; margin-top: -30px;">
+		<div class="col ml-5" style="text-align: initial; height: auto">
+			<img class="bottom w-100" *ngIf="isDarkTheme()" src="../../assets/woman2_dark.png"/>
+			<img class="top w-100" *ngIf="!isDarkTheme()" src="../../assets/woman2_light.png"/>
+		</div>
+		<div class="col">
+		</div>
+	</div>
 </body>
