@@ -33,19 +33,4 @@ export class WelcomeComponent implements OnInit {
 			this.darkTheme = resp !== 1;
 		});
 	}
-	public donutColors = [
-		{
-		  backgroundColor: [
-			'#ced',
-			'#fda',
-			'#fdd',
-		  ]
-		}
-	];
-	public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-	public doughnutChartData: SingleDataSet = [
-	  1, 1, 1
-	];
-	public doughnutChartType: ChartType = 'doughnut';
-
 }
