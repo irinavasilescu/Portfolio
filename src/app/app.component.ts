@@ -27,4 +27,12 @@ export class AppComponent {
 	toggleTheme() {
 		this.uiStyleToggleService.toggle();
 	}
+
+	openLinkedin() {
+		window.open("https://www.linkedin.com/in/irina-alexandra-vasilescu-a40176192/", '_blank');
+	}
+
+	openGithub() {
+		window.open("https://github.com/irinavasilescu", '_blank');
+	}
 }
