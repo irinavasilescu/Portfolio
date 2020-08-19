@@ -1,4 +1,4 @@
-<body class="background-skills">
+<body [ngClass]="{'background-skills-light': isDarkTheme(), 'background-skills-dark': !isDarkTheme()}">
     <br><br><br>
     <div>
         <canvas baseChart
