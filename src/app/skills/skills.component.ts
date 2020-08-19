@@ -36,9 +36,6 @@ export class SkillsComponent implements OnInit {
 		}
 	];
 	public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-	public doughnutChartData: SingleDataSet = [
-		1, 1, 1
-	];
+	public doughnutChartData: SingleDataSet = [1, 1, 1];
 	public doughnutChartType: ChartType = 'doughnut';
-
 }
