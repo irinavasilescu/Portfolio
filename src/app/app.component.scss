@@ -17,6 +17,10 @@
     color: var(--primary-color);
 }
 
+.secondary-color {
+    color: var(--secondary-color);
+}
+
 // =================================
 //        TEXT ALIGNMENT
 // =================================
@@ -30,7 +34,11 @@
 //          FONT SIZES
 // =================================
 .xx-large {
-    font-size: 100px;
+    font-size: 80px;
+}
+
+.large {
+    font-size: large;
 }
 
 // =================================
