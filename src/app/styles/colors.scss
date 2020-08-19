@@ -25,21 +25,8 @@ $primary-color-hover-dark: #ced4da;
 $secondary-color: #639ecc;
 $secondary-color-dark: #6c757d;
 
-$donut-color1: #f18677;
-$donut-color2: #328c45;
-$donut-color3: #b2b2b2;
-$donut-color4: #41a351;
-$donut-color5: #17729c;
-$donut-color6: #f3b993;
-$donut-color7: #df786c;
-
-$donut-color1-dark: #f18677;
-$donut-color2-dark: #328c45;
-$donut-color3-dark: #b2b2b2;
-$donut-color4-dark: #41a351;
-$donut-color5-dark: #17729c;
-$donut-color6-dark: #f3b993;
-$donut-color7-dark: #df786c;
+$chips-text-color: #f8f9fa;
+$chips-text-color-dark: #131315;
 
 $colors: (
   --accent-color: ($accent-color, $accent-color-dark),
@@ -50,11 +37,5 @@ $colors: (
   --background-color: ($background-color, $background-color-dark),
   --primary-color: ($primary-color, $primary-color-dark),
   --secondary-color: ($secondary-color, $secondary-color-dark),
-  --donut-color1: ($donut-color1, $donut-color1-dark),
-  --donut-color2: ($donut-color2, $donut-color2-dark),
-  --donut-color3: ($donut-color3, $donut-color3-dark),
-  --donut-color4: ($donut-color4, $donut-color4-dark),
-  --donut-color5: ($donut-color5, $donut-color5-dark),
-  --donut-color6: ($donut-color6, $donut-color6-dark),
-  --donut-color7: ($donut-color7, $donut-color7-dark),
+  --chips-text-color: ($chips-text-color, $chips-text-color-dark)
 )
