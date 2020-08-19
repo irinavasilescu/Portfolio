@@ -5,6 +5,34 @@
     overflow: auto;
 }
 
+.ft {
+    font-family: 'Playfair Display', serif;
+}
+
+// =================================
+//         TEXT COLORS
+// =================================
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+// =================================
+//        TEXT ALIGNMENT
+// =================================
+.overall-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// =================================
+//          FONT SIZES
+// =================================
+.xx-large {
+    font-size: 100px;
+}
+
 // =================================
 // TRANSITION BETWEEN IMAGES & ICONS
 // =================================

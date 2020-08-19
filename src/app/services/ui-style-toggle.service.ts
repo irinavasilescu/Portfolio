@@ -13,6 +13,7 @@ export class UiStyleToggleService {
 	private readonly THEME_KEY = 'THEME';
 	private readonly DARK_THEME_VALUE = 'DARK';
 	private readonly LIGHT_THEME_VALUE = 'LIGHT';
+	private readonly LIGHT_THEME_CLASS_NAME = 'theme-light';
 	private readonly DARK_THEME_CLASS_NAME = 'theme-dark';
 	private darkThemeSelected = false;
 
@@ -36,12 +37,14 @@ export class UiStyleToggleService {
 	private setLightTheme() {
 		console.log('LIGHT THEME');
 		document.body.classList.remove(this.DARK_THEME_CLASS_NAME);
+		document.body.classList.add(this.LIGHT_THEME_CLASS_NAME);
 		this.darkThemeSelected = false;
 		this.theme$.next(ThemeMode.LIGHT);
 	}
 
 	private setDarkTheme() {
 		console.log('DARK THEME');
+		document.body.classList.remove(this.LIGHT_THEME_CLASS_NAME);
 		document.body.classList.add(this.DARK_THEME_CLASS_NAME);
 		this.darkThemeSelected = true;
 		this.theme$.next(ThemeMode.DARK);

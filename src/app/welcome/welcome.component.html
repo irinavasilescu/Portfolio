@@ -1,13 +1,13 @@
 <div class="row" style="display: flex; flex-wrap: wrap;">
-    <div class="col" style="text-align: right; height: auto">
+    <div class="col ml-4 overall-center">
+        <span class="ft xx-large primary-color">Hi!</span>
+    </div>
+    <div class="col" style="text-align: initial; height: auto">
         <img class="bottom w-100" *ngIf="isDarkTheme()" src="../../assets/woman1_dark.png"/>
         <img class="top w-100" *ngIf="!isDarkTheme()" src="../../assets/woman1_light.png"/>
         <!-- <div id="crossfade" class="w-100">
             <img class="bottom w-100" src="../../assets/woman1_dark.png"/>
             <img class="top w-100" [ngClass]="{'transparent' : darkTheme}" src="../../assets/woman1_light.png"/>
         </div> -->
-    </div>
-    <div class="col">
-        DESCRIPTION AND BUTTON
     </div>
 </div>
