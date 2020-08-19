@@ -5,7 +5,16 @@
 			<img class="bottom w-100" *ngIf="isDarkTheme()" src="../../assets/woman2_dark.png"/>
 			<img class="top w-100" *ngIf="!isDarkTheme()" src="../../assets/woman2_light.png"/>
 		</div>
-		<div class="col">
+		<div class="col" style="display: flex; align-items: center; justify-content: center;">
+			<div class="mr-5 ml-5">
+				<h1 class="ft x-large white" style="text-align-last: center;">My skills</h1>
+				<br>
+				<mat-chip-list>
+					<mat-chip *ngFor="let skill of skills">
+						{{skill}}
+					</mat-chip>
+				</mat-chip-list>
+			</div>
 		</div>
 	</div>
 </body>

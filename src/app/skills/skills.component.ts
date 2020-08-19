@@ -8,9 +8,11 @@ export enum ThemeMode {
 @Component({
 	selector: 'skills',
 	templateUrl: './skills.component.html',
-	styleUrls: ['./skills.component.css']
+	styleUrls: ['./skills.component.css', './../app.component.scss']
 })
 export class SkillsComponent implements OnInit {
+
+	skills = ['PHP', 'JavaScript', 'Angular', 'HTML', 'Linux', 'CSS', 'Yii', 'Python', 'MySQL', 'TypeScript', 'Java'];
 
 	constructor(
 		public uiStyleToggleService: UiStyleToggleService
