@@ -1,13 +1,5 @@
-.background-skills-light {
-    background-image: url('./../../assets/method-draw-image.svg');
-    background-size: cover;
-    height: auto;
-}
-
-.background-skills-dark {
-    background-image: url('./../../assets/method-draw-image (1).svg');
-    background-size: cover;
-    height: auto;
+.background-color {
+    background-color: var(--secondary-color);
 }
 
 .mat-chip.mat-standard-chip {

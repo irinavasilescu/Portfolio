@@ -12,7 +12,7 @@ export enum ThemeMode {
 })
 export class SkillsComponent implements OnInit {
 
-	skills = ['PHP', 'JavaScript', 'Angular', 'HTML', 'Linux', 'CSS', 'Yii', 'Python', 'MySQL', 'TypeScript', 'Java'];
+	skills = ['PHP', 'JavaScript', 'Angular', 'Angular Material', 'HTML', 'Linux', 'CSS', 'Yii', 'AWS', 'Python', 'MySQL', 'TypeScript', 'Java', 'RxJS'];
 
 	constructor(
 		public uiStyleToggleService: UiStyleToggleService
