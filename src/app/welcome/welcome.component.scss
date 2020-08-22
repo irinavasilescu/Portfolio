@@ -11,14 +11,3 @@
         flex-direction: column;
     }
 }
-
-.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
-    color: var(--primary-color);
-    outline: none;
-}
-
-.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
-    background-color: var(--primary-color);
-    color: var(--chips-text-color);
-    outline: none;
-}
