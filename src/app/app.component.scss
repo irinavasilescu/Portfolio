@@ -13,10 +13,14 @@
     overflow: auto;
 }
 
-.ft {
-    // font-family: 'Merriweather', serif;
-    // font-family: 'Anton', sans-serif;
-    font-family: 'Archivo Black', sans-serif;
+.ft-bold {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+}
+
+.ft-regular {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
 }
 
 // =================================
@@ -211,7 +215,6 @@ input:checked + .slider:before {
 }
   
 .message {
-    // background-color: blanchedalmond;
     background-color: orange;
     color: black;
     display: block;
@@ -219,7 +222,7 @@ input:checked + .slider:before {
     overflow: hidden;
     position: absolute;
     top: 0.2rem;
-    animation: openclose 10s ease-in-out infinite;
+    animation: openclose 8s ease-in-out infinite;
 }
   
 @keyframes openclose {
@@ -250,6 +253,8 @@ input:checked + .slider:before {
     85% { width: 480px}
     90% { width: 480px }
     95% { top: -13.5rem; width: 0 }
+
+    100% { top: 0.2rem; width: 0 }
 }
 
 .dont-show {
@@ -266,4 +271,17 @@ input:checked + .slider:before {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+  
+.scrolling-box {
+    scroll-behavior: smooth;
+}
+  
+section {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
