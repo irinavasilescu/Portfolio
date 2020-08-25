@@ -1,12 +1,22 @@
+// .background {
+//     background-color: var(--background-color);
+//     width: 100%;
+//     height: 100%;
+//     overflow: auto;
+// }
+
 .background {
-    background-color: var(--background-color);
+    background-image: url('./../assets/alex-holyoake-cagsu0bb3K8-unsplash.jpg');
+    background-size: cover;
     width: 100%;
     height: 100%;
     overflow: auto;
 }
 
 .ft {
-    font-family: 'Merriweather', serif;
+    // font-family: 'Merriweather', serif;
+    // font-family: 'Anton', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 // =================================
@@ -140,4 +150,153 @@ input:checked + .slider:before {
     background-color: var(--primary-color);
     color: var(--chips-text-color);
     outline: none;
+}
+
+// =======================
+//       TEXT BLIND
+// =======================
+
+.textblind {
+	color: black;
+	position: relative;
+	padding-left: 18px;
+	// font-family: Arial;
+	// font-weight: bold;
+	font-size: 3rem;
+	text-transform: uppercase;
+    line-height: 1;
+}
+	
+.blind {
+    display: block;
+    overflow: hidden;
+    animation: dropin 0.5s forwards;
+}
+		
+.initial-span {
+    display: block;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+@keyframes dropin {
+	 0%  { transform: translateY(-100%); opacity: 1; }
+    10%  { transform: translateY(-90%);  opacity: 1; }
+    20%  { transform: translateY(-80%);  opacity: 1; }
+    30%  { transform: translateY(-70%);  opacity: 1; }
+    40%  { transform: translateY(-60%);  opacity: 1; }
+    50%  { transform: translateY(-50%);  opacity: 1; }
+	60%  { transform: translateY(-40%);  opacity: 1; }
+    70%  { transform: translateY(-30%);  opacity: 1; }
+    80%  { transform: translateY(-20%);  opacity: 1; }
+    90%  { transform: translateY(-10%);  opacity: 1; }
+    100% { transform: translateY(0);     opacity: 1; }
+}
+
+// =============================
+//         TEXT SWAPPING
+// =============================
+
+.completing-text-container {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+}
+  
+.message {
+    background-color: blanchedalmond;
+    color: black;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    top: 0.2rem;
+    animation: openclose 10s ease-in-out infinite;
+}
+  
+@keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    10% {
+        width: 250px;
+    }
+    15% {
+      width: 500px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+    }
+    100% {
+      top: 0;
+      width: 0;
+    }
+}
+
+.dont-show {
+    display: none;
+}
+
+.show {
+    display: list-item;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }

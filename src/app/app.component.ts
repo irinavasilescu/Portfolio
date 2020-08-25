@@ -10,7 +10,7 @@ export enum ThemeMode {
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
 	darkTheme: boolean;
 
@@ -19,6 +19,20 @@ export class AppComponent {
 	) { }
 
 	title = 'My Portfolio';
+
+	ngOnInit() {
+		document.getElementById('blind1').classList.add('blind');
+		setTimeout(() => {
+			document.getElementById('blind2').classList.add('blind');
+		}, 500);
+		setTimeout(() => {
+			document.getElementById('blind3').classList.add('blind');
+		}, 1000);
+		setTimeout(() => {
+			document.getElementById('blind4').classList.add('blind');
+			document.getElementById('message').classList.add('message');
+		}, 1300);
+	}
 
 	isDarkTheme() {
 		return this.uiStyleToggleService.theme$.value ===  ThemeMode.DARK;
