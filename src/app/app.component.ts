@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
 	) { }
 
 	title = 'My Portfolio';
+	skills = ['PHP', 'JavaScript', 'Angular', 'Angular Material', 'HTML', 'Linux', 'CSS', 'Yii', 'AWS', 'Python', 'MySQL', 'TypeScript', 'Java', 'RxJS'];
 
 	ngOnInit() {
 		document.getElementById('blind1').classList.add('blind');

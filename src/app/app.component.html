@@ -39,29 +39,48 @@
 
         <section id="2">
             <div style="background: white; height: 100%; width: auto; display: flex; align-items: center; justify-content: center;">
-                <div style="text-align: center; margin-top: 10vh;">
+                <div style="text-align: center; margin-top: 10vh; text-align: -webkit-center;">
                     <span class="ft-bold pl-3 pr-3 pt-2" style="font-size: 3rem; background: #ec7bc4; color: black;">ABOUT ME</span>
                     <br>
                     <span class="ft-regular">
+                        <br>
                         Hi again! 
                         <br><br>
-                        My name is <span style="color: #ec7bc4">Irina Alexandra Vasilescu</span> and I'm a software developer living in Bucharest, Romania.
+                        My name is <span style="color: #ec7bc4">Irina Alexandra Vasilescu</span> and I'm a web developer living in Bucharest, Romania.
                         <br>
                         I create simple and intuitive websites.
+                        <br><br>
+                        <button mat-button id="blind5" style="background-color: black;">
+                            <a href="#3" class="fill-pink-white"><span class="ft-regular">SEE MY PROJECTS</span></a>
+                        </button>
+                        <br><br>
+                        I might have used these in the process:
+                        <br><br>
+                        <div style="width: 500px">
+                            <mat-chip-list>
+                                <mat-chip style="background-color: black; color: #ec7bc4" *ngFor="let skill of skills">
+                                    <span class="ft-regular">{{skill | uppercase}}</span>
+                                </mat-chip>
+                            </mat-chip-list>
+                        </div>
                     </span>
                 </div>
             </div>
         </section>
 
         <section id="3">
-            <div style="background: white; height: 100%; width: auto">  
-                PROJECTS
+            <div style="background: white; height: 100%; width: auto; display: flex; align-items: center; justify-content: center;">  
+                <div style="text-align: center; margin-top: 10vh; text-align: -webkit-center;">
+                    <span class="ft-bold pl-3 pr-3 pt-2" style="font-size: 3rem; background: #ec7bc4; color: black;">PROJECTS</span>
+                </div>
             </div>
         </section> 
         
         <section id="4">
-            <div style="background: white; height: 100%; width: auto">  
-                CONTACT
+            <div style="background: white; height: 100%; width: auto; display: flex; align-items: center; justify-content: center;">  
+                <div style="text-align: center; margin-top: 10vh; text-align: -webkit-center;">
+                    <span class="ft-bold pl-3 pr-3 pt-2" style="font-size: 3rem; background: #ec7bc4; color: black;">CONTACT</span>
+                </div>
             </div>
         </section> 
     
