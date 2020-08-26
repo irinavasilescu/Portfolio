@@ -6,7 +6,7 @@
 // }
 
 .background {
-    background-image: url('./../assets/fernando-hernandez-pOmr_qQRgiU-unsplash.jpg');
+    background-image: url('./../assets/pink.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -145,17 +145,6 @@ input:checked + .slider:before {
     transform: rotateZ(-45deg);
 }
 
-.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
-    color: var(--primary-color);
-    outline: none;
-}
-
-.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
-    background-color: var(--primary-color);
-    color: var(--chips-text-color);
-    outline: none;
-}
-
 // =======================
 //       TEXT BLIND
 // =======================
@@ -215,7 +204,7 @@ input:checked + .slider:before {
 }
   
 .message {
-    background-color: orange;
+    background-color: #ec7bc4;
     color: black;
     display: block;
     font-weight: 900;
@@ -284,4 +273,19 @@ section {
 a {
     text-decoration: none;
     color: black;
+}
+
+a {
+    color: black;
+    background: linear-gradient(to right, #ec7bc4, #ec7bc4 50%, black 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+    &:hover {
+        background-position: 0 100%;
+    }
 }
