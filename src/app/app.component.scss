@@ -25,22 +25,6 @@
 }
 
 // =================================
-//         TEXT COLORS
-// =================================
-
-.primary-color {
-    color: var(--primary-color);
-}
-
-.secondary-color {
-    color: var(--secondary-color);
-}
-
-.white {
-    color: #f8f9fa;
-}
-
-// =================================
 //        TEXT ALIGNMENT
 // =================================
 .overall-center {
@@ -62,88 +46,6 @@
 
 .large {
     font-size: large;
-}
-
-// =================================
-// TRANSITION BETWEEN IMAGES & ICONS
-// =================================
-
-#crossfae {
-    position: relative;
-    height: 250px;
-    width: 400px;
-}
-
-#crossfade img{
-    left: 0;
-    -webkit-transition: opacity 2s ease-in-out;
-    -moz-transition: opacity 2s ease-in-out;
-    -o-transition: opacity 2s ease-in-out;
-    -ms-transition: opacity 2s ease-in-out;    
-    transition: opacity 2s ease-in-out;
-}
- 
-.transparent {
-    opacity: 0;
-}
-
-// =================================
-//          TOGGLE BUTTON
-// =================================
-
-.switch {
-    position: relative;
-    display: block;
-    width: 90px;
-    height: 55px;
-    margin-bottom: 30px;
-}
-
-.switch input {
-    display: none;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: white;
-    transition: .5s;
-    border: 3px solid white;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    bottom: 14px;
-    top: 8px;
-    background-color: #f18677;
-    transition: .5s;
-}
-
-input:checked + .slider {
-    background-color: white;
-}
-
-input:checked + .slider:before {
-    transform: translateX(47px) rotateZ(45deg);
-    background: #8a8a8a;
-}
-
-.slider.round {
-    border-radius: 35px;
-}
-
-.slider.round:before {
-    width: 43%;
-    height: 43%;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    transform: rotateZ(-45deg);
 }
 
 // =======================
@@ -255,16 +157,9 @@ input:checked + .slider:before {
     display: list-item;
 }
 
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-  
 .scrolling-box {
-    scroll-behavior: smooth !important;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
   
 section {
