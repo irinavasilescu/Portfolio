@@ -1,9 +1,10 @@
-// .background {
-//     background-color: var(--background-color);
-//     width: 100%;
-//     height: 100%;
-//     overflow: auto;
-// }
+.background-about {
+    background-image: url('./../assets/klim-musalimov-1r0aLUYxUH0-unsplash\ \(3\).jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
 
 .background {
     background-image: url('./../assets/pink.jpg');
@@ -67,7 +68,7 @@
 // TRANSITION BETWEEN IMAGES & ICONS
 // =================================
 
-#crossfade {
+#crossfae {
     position: relative;
     height: 250px;
     width: 400px;
@@ -191,7 +192,7 @@ input:checked + .slider:before {
 // =============================
 
 .completing-text-container {
-    color: #333;
+    color: black;
     font-family: tahoma;
     font-size: 3rem;
     font-weight: 100;
@@ -263,7 +264,7 @@ input:checked + .slider:before {
 }
   
 .scrolling-box {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
   
 section {
@@ -275,9 +276,24 @@ a {
     color: black;
 }
 
-a {
+.fill-pink-black {
     color: black;
     background: linear-gradient(to right, #ec7bc4, #ec7bc4 50%, black 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+    &:hover {
+        background-position: 0 100%;
+    }
+}
+
+.fill-pink-white {
+    color: white;
+    background: linear-gradient(to right, #ec7bc4, #ec7bc4 50%, white 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
