@@ -22,6 +22,39 @@ export class AppComponent implements OnInit {
 	skills = ['PHP', 'JavaScript', 'Angular', 'Angular Material', 'HTML', 'Linux', 'CSS', 'Yii', 'AWS', 'Python', 'MySQL', 'TypeScript', 'Java', 'RxJS'];
 
 	ngOnInit() {
+
+		let currentDot = 0;
+		const dots = document.querySelectorAll(".dot");
+		const boxes = document.querySelectorAll(".box");
+
+		const boxesInital = () => {
+			boxes.forEach((box, index) => {
+				(box as HTMLElement).style.left = `${index * 100}%`
+			})
+		}
+		boxesInital()
+
+		dots.forEach((dot, dotIndex) => {
+			dot.addEventListener("click", function() {
+				boxes.forEach((box, boxIndex) => {
+				let boxLeft = parseInt((box as HTMLElement).style.left)
+				if(currentDot < dotIndex) {
+					boxLeft = boxLeft - 100
+				}
+				else if (currentDot > dotIndex) {
+					boxLeft = boxLeft + 100
+				}
+				else if (currentDot === dotIndex) {
+					return
+				}
+				(box as HTMLElement).style.left = `${boxLeft}%`
+				});
+				dots[currentDot].classList.remove('active')
+				dots[dotIndex].classList.add('active')
+				currentDot = dotIndex
+			});
+		});
+
 		document.getElementById('blind1').classList.add('blind');
 		document.getElementById('blind5').classList.add('dont-show');
 		setTimeout(() => {
