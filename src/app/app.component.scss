@@ -126,30 +126,30 @@
 @keyframes openclose {
     // first word:
     0%  { top: 0.2rem; width: 0 }
-    5%  { width: 480px }
-    10% { width: 480px }
-    15% { width: 480px }
+    5%  { width: 320px }
+    10% { width: 320px }
+    15% { width: 320px }
     20% { top: 0.2rem; width: 0 }
 
     // second word:
     25% { top: -4.5rem; width: 0 }
-    30% { width: 480px }
-    35% { width: 480px }
-    40% { width: 480px }
+    30% { width: 235px }
+    35% { width: 235px }
+    40% { width: 235px }
     45% { top: -4.5rem; width: 0 }
 
     // third word:
     50% { top: -9rem; width: 0 }
-    55% { width: 480px }
-    60% { width: 480px }
-    65% { width: 480px }
+    55% { width: 240px }
+    60% { width: 240px }
+    65% { width: 240px }
     70% { top: -9rem; width: 0 }
     
     // forth word:
     75% { top: -13.5rem; width: 0 }
-    80% { width: 480px }
-    85% { width: 480px}
-    90% { width: 480px }
+    80% { width: 190px }
+    85% { width: 190px}
+    90% { width: 190px }
     95% { top: -13.5rem; width: 0 }
 
     100% { top: 0.2rem; width: 0 }
