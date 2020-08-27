@@ -8,7 +8,7 @@ export enum ThemeMode {
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss']
+	styleUrls: ['./app.component.scss', './devices.min.css']
 })
 export class AppComponent implements OnInit {
 
