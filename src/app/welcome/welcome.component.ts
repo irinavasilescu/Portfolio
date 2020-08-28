@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UiStyleToggleService } from '../services/ui-style-toggle.service';
-import { ChartType, ChartDataSets } from 'chart.js';
-import { Label, SingleDataSet } from 'ng2-charts';
 
 export enum ThemeMode {
 	DARK, LIGHT

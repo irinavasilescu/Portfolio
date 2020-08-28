@@ -9,7 +9,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { UiStyleToggleService } from "./services/ui-style-toggle.service";
 import { StorageService } from "./services/storage.service";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ChartsModule } from 'ng2-charts';
 import { SkillsComponent } from './skills/skills.component';
 
 export function themeFactory(themeService: UiStyleToggleService) {
@@ -28,8 +27,7 @@ export function themeFactory(themeService: UiStyleToggleService) {
 		BrowserAnimationsModule,
 		NgbModule,
 		MaterialModule,
-		FontAwesomeModule,
-		ChartsModule
+		FontAwesomeModule
 	],
 	providers: [
 		UiStyleToggleService,
