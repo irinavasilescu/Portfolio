@@ -66,11 +66,11 @@ export class AppComponent implements OnInit {
 		setTimeout(() => {
 			document.getElementById('blind4').classList.add('blind');
 			document.getElementById('message').classList.add('message');
-		}, 1300);
+		}, 1500);
 		setTimeout(() => {
 			document.getElementById('blind5').classList.add('blind');
 			document.getElementById('blind5').classList.add('show');
-		}, 1800);
+		}, 2000);
 	}
 
 	isDarkTheme() {
