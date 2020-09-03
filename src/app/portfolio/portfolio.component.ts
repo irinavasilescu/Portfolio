@@ -6,11 +6,11 @@ export enum ThemeMode {
 }
 
 @Component({
-	selector: 'skills',
-	templateUrl: './skills.component.html',
-	styleUrls: ['./skills.component.css', './../app.component.scss']
+	selector: 'portfolio',
+	templateUrl: './portfolio.component.html',
+	styleUrls: ['./portfolio.component.css', './../app.component.scss']
 })
-export class SkillsComponent implements OnInit {
+export class PortfolioComponent implements OnInit {
 
 	skills = ['PHP', 'JavaScript', 'Angular', 'Angular Material', 'HTML', 'Linux', 'CSS', 'Yii', 'AWS', 'Python', 'MySQL', 'TypeScript', 'Java', 'RxJS'];
 
@@ -19,9 +19,5 @@ export class SkillsComponent implements OnInit {
 	) { }
 
 	ngOnInit(): void {
-	}
-
-	isDarkTheme() {
-		return this.uiStyleToggleService.theme$.value === ThemeMode.DARK;
 	}
 }

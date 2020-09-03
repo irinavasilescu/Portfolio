@@ -9,7 +9,7 @@ import { ShelvesComponent } from './shelves/shelves.component';
 import { UiStyleToggleService } from "./services/ui-style-toggle.service";
 import { StorageService } from "./services/storage.service";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { SkillsComponent } from './skills/skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 export function themeFactory(themeService: UiStyleToggleService) {
 	return () => themeService.setThemeOnStart();
@@ -19,7 +19,7 @@ export function themeFactory(themeService: UiStyleToggleService) {
 	declarations: [
 		AppComponent,
 		ShelvesComponent,
-		SkillsComponent
+		PortfolioComponent
 	],
 	imports: [
 		BrowserModule,
