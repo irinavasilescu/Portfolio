@@ -4,7 +4,7 @@ import { ShelvesComponent } from './shelves/shelves.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
-	{ path: '**', component: PortfolioComponent },
+	{ path: '', component: PortfolioComponent },
 	{ path: 'shelves', component: ShelvesComponent },
 	{ path: 'portfolio', component: PortfolioComponent }
 ];
