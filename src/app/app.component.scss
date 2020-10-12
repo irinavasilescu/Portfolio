@@ -204,6 +204,21 @@ a {
     }
 }
 
+.fill-orange-white {
+    color: white;
+    background: linear-gradient(to right, #ff9947, #ff9947 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    text-decoration: none;
+    &:hover {
+        background-position: 0 100%;
+    }
+}
+
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
     .col {
