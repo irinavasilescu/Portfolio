@@ -10,6 +10,7 @@ import { UiStyleToggleService } from "./services/ui-style-toggle.service";
 import { StorageService } from "./services/storage.service";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 export function themeFactory(themeService: UiStyleToggleService) {
 	return () => themeService.setThemeOnStart();
@@ -27,7 +28,8 @@ export function themeFactory(themeService: UiStyleToggleService) {
 		BrowserAnimationsModule,
 		NgbModule,
 		MaterialModule,
-		FontAwesomeModule
+		FontAwesomeModule,
+		YouTubePlayerModule
 	],
 	providers: [
 		UiStyleToggleService,
