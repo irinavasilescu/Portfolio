@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UiStyleToggleService } from '../services/ui-style-toggle.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ShelvesComponent } from '../shelves/shelves.component';
+import { LifeonnutritionComponent } from '../lifeonnutrition/lifeonnutrition.component';
 
 export enum ThemeMode {
 	DARK, LIGHT
@@ -54,5 +55,9 @@ export class PortfolioComponent implements OnInit {
 
 	openShelves() {
 		this.dialog.open(ShelvesComponent, { width: '850px' });
+	}
+
+	openLifeOnNutrition() {
+		this.dialog.open(LifeonnutritionComponent, { width: '850px' });
 	}
 }
