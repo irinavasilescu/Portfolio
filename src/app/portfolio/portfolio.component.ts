@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UiStyleToggleService } from '../services/ui-style-toggle.service';
+import { MatDialog } from '@angular/material/dialog';
+import { ShelvesComponent } from '../shelves/shelves.component';
 
 export enum ThemeMode {
 	DARK, LIGHT
@@ -15,7 +17,8 @@ export class PortfolioComponent implements OnInit {
 	skills = ['PHP', 'JavaScript', 'Angular', 'Angular Material', 'HTML', 'Linux', 'CSS', 'Yii', 'AWS', 'Python', 'MySQL', 'TypeScript', 'Java', 'RxJS'];
 
 	constructor(
-		public uiStyleToggleService: UiStyleToggleService
+		public uiStyleToggleService: UiStyleToggleService,
+		public dialog: MatDialog,
 	) { }
 
 	ngOnInit() {
@@ -47,5 +50,9 @@ export class PortfolioComponent implements OnInit {
 
 	openGoodreads() {
 		window.open("https://www.goodreads.com/user/show/58575151-irina-vasilescu", '_blank');
+	}
+
+	openShelves() {
+		this.dialog.open(ShelvesComponent, { width: '850px' });
 	}
 }
