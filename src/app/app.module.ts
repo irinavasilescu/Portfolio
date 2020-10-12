@@ -12,6 +12,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { MatDialogModule } from '@angular/material/dialog';
+import { LifeonnutritionComponent } from './lifeonnutrition/lifeonnutrition.component';
 
 export function themeFactory(themeService: UiStyleToggleService) {
 	return () => themeService.setThemeOnStart();
@@ -21,7 +22,8 @@ export function themeFactory(themeService: UiStyleToggleService) {
 	declarations: [
 		AppComponent,
 		ShelvesComponent,
-		PortfolioComponent
+		PortfolioComponent,
+		LifeonnutritionComponent
 	],
 	imports: [
 		BrowserModule,
