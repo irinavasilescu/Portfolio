@@ -44,4 +44,8 @@ export class PortfolioComponent implements OnInit {
 	openGithub() {
 		window.open("https://github.com/irinavasilescu", '_blank');
 	}
+
+	openGoodreads() {
+		window.open("https://www.goodreads.com/user/show/58575151-irina-vasilescu", '_blank');
+	}
 }
