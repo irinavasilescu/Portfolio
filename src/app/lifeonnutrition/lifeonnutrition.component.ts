@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
 	selector: 'app-lifeonnutrition',
@@ -7,12 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LifeonnutritionComponent implements OnInit {
 
-	constructor() { }
+	displayURL: any;
+
+	constructor(
+		private sanitizer: DomSanitizer
+	) { }
 
 	ngOnInit(): void {
-		const tag = document.createElement('script');
-		tag.src = "https://www.youtube.com/iframe_api";
-		document.body.appendChild(tag);
+		this.displayURL = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/l6iHC6ds5hg');
 	}
 
 }

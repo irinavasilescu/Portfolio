@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UiStyleToggleService } from '../services/ui-style-toggle.service';
-import { YouTubePlayer } from '@angular/youtube-player';
-
-export enum ThemeMode {
-	DARK, LIGHT
-}
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
 	selector: 'shelves',
@@ -13,17 +8,13 @@ export enum ThemeMode {
 })
 export class ShelvesComponent implements OnInit {
 
-	lightbulb: string;
-	darkTheme: boolean; 
-	player: any;
+	displayURL: any;
 
 	constructor(
-		private uiStyleToggleService: UiStyleToggleService
+		private sanitizer: DomSanitizer
 	) { }
 
 	ngOnInit(): void {
-		const tag = document.createElement('script');
-    	tag.src = "https://www.youtube.com/iframe_api";
-		document.body.appendChild(tag);
+		this.displayURL = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/XzySnWsAhWU');
 	}
 }
