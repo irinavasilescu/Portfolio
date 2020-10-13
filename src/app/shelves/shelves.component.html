@@ -1,4 +1,4 @@
-<div class="my-5" style="text-align: center; text-align: -webkit-center;">
+<div class="my-5" style="text-align: center; text-align: -webkit-center; max-height: 70vh">
     <span class="ft-bold pl-3 pr-3 pt-1 white-shadow" style="font-size: 3rem; background: #ffba91; color: black;">SHELVES</span>
     <br><br>
     <div class="w-100 mt-5" style="display: flex; justify-content: center;">
@@ -18,4 +18,7 @@
     <div class="video-container">
         <iframe [src]="displayURL"></iframe>  
     </div>
+    <button class="my-4" tabindex="-1" mat-button (click)="closeDialog()" style="background-color: black; outline: none">
+        <a class="fill-orange-white"><span class="ft-regular">CLOSE</span></a>
+    </button>
 </div>
