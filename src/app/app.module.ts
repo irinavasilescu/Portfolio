@@ -6,17 +6,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MaterialModule } from '../app/material/material.module';
 import { ShelvesComponent } from './shelves/shelves.component';
-import { UiStyleToggleService } from "./services/ui-style-toggle.service";
-import { StorageService } from "./services/storage.service";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { MatDialogModule } from '@angular/material/dialog';
 import { LifeonnutritionComponent } from './lifeonnutrition/lifeonnutrition.component';
-
-export function themeFactory(themeService: UiStyleToggleService) {
-	return () => themeService.setThemeOnStart();
-}
 
 @NgModule({
 	declarations: [
@@ -35,11 +29,7 @@ export function themeFactory(themeService: UiStyleToggleService) {
 		YouTubePlayerModule,
 		MatDialogModule
 	],
-	providers: [
-		UiStyleToggleService,
-		StorageService,
-		{provide: APP_INITIALIZER, useFactory: themeFactory, deps: [UiStyleToggleService], multi: true},
-	],
+	providers: [],
 	bootstrap: [AppComponent]
 })
 

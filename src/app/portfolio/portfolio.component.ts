@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { UiStyleToggleService } from '../services/ui-style-toggle.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ShelvesComponent } from '../shelves/shelves.component';
 import { LifeonnutritionComponent } from '../lifeonnutrition/lifeonnutrition.component';
@@ -18,8 +17,7 @@ export class PortfolioComponent implements OnInit {
 	skills = ['PHP', 'JavaScript', 'Angular', 'Angular Material', 'HTML', 'Linux', 'CSS', 'Yii', 'AWS', 'Python', 'MySQL', 'TypeScript', 'Java', 'RxJS'];
 
 	constructor(
-		public uiStyleToggleService: UiStyleToggleService,
-		public dialog: MatDialog,
+		public dialog: MatDialog
 	) { }
 
 	ngOnInit() {
