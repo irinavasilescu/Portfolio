@@ -1,1 +1,1 @@
-## Hi! This is my portfolio! Better access this [thingy](https://irinaavasilescu.github.io/Portfolio).
+# Hi! This is my portfolio! Better access this [thingy](https://irinavasilescu.github.io/Portfolio/).
