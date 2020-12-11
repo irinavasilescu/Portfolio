@@ -17,7 +17,7 @@ export class LifeonnutritionComponent implements OnInit {
 	) { }
 
 	ngOnInit(): void {
-		this.displayURL = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/l6iHC6ds5hg');
+		this.displayURL = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/zX_485BkZls');
 	}
 
 	closeDialog() {
