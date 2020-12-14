@@ -193,43 +193,9 @@
     scroll-behavior: smooth;
 }
   
-// section {
-//     height: 100%;
-// }
-
 a {
     text-decoration: none;
     color: black;
-}
-
-.fill-pink-black {
-    color: black;
-    background: linear-gradient(to right, #ec7bc4, #ec7bc4 50%, black 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 275ms ease;
-    text-decoration: none;
-    &:hover {
-        background-position: 0 100%;
-    }
-}
-
-.fill-pink-white {
-    color: white;
-    background: linear-gradient(to right, #ec7bc4, #ec7bc4 50%, white 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 275ms ease;
-    text-decoration: none;
-    &:hover {
-        background-position: 0 100%;
-    }
 }
 
 .fill-dark-white {

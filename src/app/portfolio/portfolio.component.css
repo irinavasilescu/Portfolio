@@ -23,10 +23,12 @@
   
 .container:hover .image {
     opacity: 0.1;
+    cursor: pointer;
 }
   
 .container:hover .middle {
     opacity: 1;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 450px) {
