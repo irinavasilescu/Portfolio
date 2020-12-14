@@ -43,6 +43,12 @@
     }
 }
 
+@media only screen and (max-width: 450px) {
+    .hide-on-phone {
+        display: none;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
