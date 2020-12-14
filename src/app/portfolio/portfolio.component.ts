@@ -2,10 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ShelvesComponent } from '../shelves/shelves.component';
 import { LifeonnutritionComponent } from '../lifeonnutrition/lifeonnutrition.component';
-
-export enum ThemeMode {
-	DARK, LIGHT
-}
+import { scrollSnapPolyfill } from 'css-scroll-snap-polyfill';
 
 @Component({
 	selector: 'portfolio',
@@ -13,8 +10,6 @@ export enum ThemeMode {
 	styleUrls: ['./portfolio.component.css', './../app.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-
-	skills = ['PHP', 'JavaScript', 'Angular', 'Angular Material', 'HTML', 'Linux', 'CSS', 'Yii', 'AWS', 'Python', 'MySQL', 'TypeScript', 'Java', 'RxJS'];
 
 	constructor(
 		public dialog: MatDialog
@@ -31,6 +26,8 @@ export class PortfolioComponent implements OnInit {
 		setTimeout(() => {
 			document.getElementById('blind4').classList.add('blind');
 		}, 1500);
+
+		scrollSnapPolyfill.cssScrollSnapPolyfill();
 	}
 
 	openLinkedin() {
