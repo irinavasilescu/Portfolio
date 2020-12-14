@@ -22,7 +22,6 @@ export class PortfolioComponent implements OnInit {
 
 	ngOnInit() {
 		document.getElementById('blind1').classList.add('blind');
-		document.getElementById('blind5').classList.add('dont-show');
 		setTimeout(() => {
 			document.getElementById('blind2').classList.add('blind');
 		}, 500);
@@ -31,12 +30,7 @@ export class PortfolioComponent implements OnInit {
 		}, 1000);
 		setTimeout(() => {
 			document.getElementById('blind4').classList.add('blind');
-			// document.getElementById('message').classList.add('message');
 		}, 1500);
-		setTimeout(() => {
-			document.getElementById('blind5').classList.add('blind');
-			document.getElementById('blind5').classList.add('show');
-		}, 2000);
 	}
 
 	openLinkedin() {
