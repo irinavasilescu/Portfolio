@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
-import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
 	selector: 'app-lifeonnutrition',
@@ -9,18 +7,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class LifeonnutritionComponent implements OnInit {
 
-	displayURL: any;
-
-	constructor(
-		public dialogRef: MatDialogRef<any>,
-		private sanitizer: DomSanitizer
-	) { }
+	constructor() { }
 
 	ngOnInit(): void {
-		this.displayURL = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/zX_485BkZls');
-	}
-
-	closeDialog() {
-		this.dialogRef.close();
 	}
 }

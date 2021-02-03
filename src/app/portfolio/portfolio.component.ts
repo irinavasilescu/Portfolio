@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { ShelvesComponent } from '../shelves/shelves.component';
-import { LifeonnutritionComponent } from '../lifeonnutrition/lifeonnutrition.component';
 import { scrollSnapPolyfill } from 'css-scroll-snap-polyfill';
+import { Router } from '@angular/router';
 
 @Component({
 	selector: 'portfolio',
@@ -12,7 +10,7 @@ import { scrollSnapPolyfill } from 'css-scroll-snap-polyfill';
 export class PortfolioComponent implements OnInit {
 
 	constructor(
-		public dialog: MatDialog
+		public router: Router
 	) { }
 
 	ngOnInit() {
@@ -42,11 +40,11 @@ export class PortfolioComponent implements OnInit {
 		window.open("https://www.goodreads.com/user/show/58575151-irina-vasilescu", '_blank');
 	}
 
-	openShelves() {
-		this.dialog.open(ShelvesComponent, { width: '850px' });
+	navigateToShelves() {
+		this.router.navigate(['shelves']);
 	}
 
-	openLifeOnNutrition() {
-		this.dialog.open(LifeonnutritionComponent, { width: '850px' });
+	navigateToLifeOnNutrition() {
+		this.router.navigate(['lifeonnutrition']);
 	}
 }
