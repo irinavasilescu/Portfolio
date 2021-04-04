@@ -47,4 +47,8 @@ export class PortfolioComponent implements OnInit {
 	navigateToLifeOnNutrition() {
 		this.router.navigate(['lifeonnutrition']);
 	}
+
+	navigateToGoodDonutWriting() {
+		window.open("https://good-donut-test.tumblr.com/", '_blank');
+	}
 }
