@@ -41,13 +41,13 @@
     .responsive-img-container { 
         width: 60%;
     }
-}
+} */
 
 @media only screen and (max-width: 450px) {
     .hide-on-phone {
         display: none;
     }
-} */
+}
 
 * {
     box-sizing: border-box;
