@@ -14,21 +14,17 @@
     overflow: auto;
 }
 
-.background3 {
-    background-color: #ff8f35;
-}
+// .background3 {
+//     background-color: #ff8f35;
+// }
 
-.background4 {
-    background-color: #0167b4;
-}
+// .background4 {
+//     background-color: #0167b4;
+// }
 
-.background-good-donut-writing {
-    background-color: #ab5e8a;
-}
-
-.background-places {
-    background-color: #385f4b;
-}
+// .background-good-donut-writing {
+//     background-color: white;
+// }
 
 .background5 {
     background-image: url('./../assets/portfolio_background3.png');
@@ -206,9 +202,9 @@ a {
     color: black;
 }
 
-.fill-dark-white {
+@mixin fill-dark-white($color) {
     color: white;
-    background: linear-gradient(to right, #05050e, #05050e 50%, white 50%);
+    background: linear-gradient(to right, #05050e, #05050e 50%, $color 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -216,9 +212,30 @@ a {
     background-position: 100%;
     transition: background-position 275ms ease;
     text-decoration: none;
+    
     &:hover {
         background-position: 0 100%;
     }
+}
+
+.fill-dark-white-orange {
+    @include fill-dark-white(#FF8F35);
+}
+
+.fill-dark-white-blue {
+    @include fill-dark-white(#0167B4);
+}
+
+.fill-dark-white-purple {
+    @include fill-dark-white(#9E5273);
+}
+
+.fill-dark-white-green {
+    @include fill-dark-white(#4caf50);
+}
+
+.fill-dark-white-yellow {
+    @include fill-dark-white(#F1C40F);
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */

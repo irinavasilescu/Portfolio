@@ -7,7 +7,8 @@
         <span class="text-center" style="font-size: 3rem; color: black; margin-top: -15px; font-weight: 900;">HI!</span>
         <span class="text-center" style="font-size: 3rem; color: black; margin-top: -15px; font-weight: 900;">I'M IRINA</span>
         <span class="text-center" style="font-size: 3rem; color: black; margin-top: -15px; font-weight: 900;">AND I'M A</span>
-        <span class="text-center" style="font-size: 3rem; color: black; margin-top: -15px; font-weight: 900;">WEB DEVELOPER</span>
+        <span class="text-center" style="font-size: 3rem; color: black; margin-top: -15px; font-weight: 900;">FRONTEND</span>
+        <span class="text-center" style="font-size: 3rem; color: black; margin-top: -15px; font-weight: 900;">DEVELOPER</span>
     </div>
     <div class="text-center pointer hide-on-phone" style="margin-top: -80px; position: relative;">
         <a href="#2">
@@ -30,11 +31,11 @@
                 <span class="ml-2">
                     <br>
                     <span class="large" style="color: black; font-weight: 500">
-                        My name is <span style="font-weight: 700; color: black"><b>Irina Alexandra Vasilescu</b></span> and I'm a web developer living in Bucharest, Romania.
+                        My name is <span style="font-weight: 700; color: black"><b>Irina Alexandra Vasilescu</b></span> and I'm a frontend developer living in Bucharest, Romania.
                         <br>
-                        I'm into programming, fantasy books, video games and the simple things in life.
+                        I'm into programming, books, video games and the simple things in life.
                         <br>
-                        I create simple, responsive and intuitive websites.
+                        I create simple, responsive and intuitive frontend applications.
                     </span>
                 </span>
             </div>
@@ -57,7 +58,7 @@
             <img src="./assets/shelves_presentation.png" class="image w-100">
             <div class="middle">
                 <div (click)="navigateToShelves()">
-                    <a class="fill-dark-white"><span class="ft-regular">MORE ABOUT SHELVES</span></a>
+                    <a class="fill-dark-white-orange"><span class="ft-regular">MORE ABOUT SHELVES</span></a>
                 </div>
             </div>
         </div>
@@ -79,7 +80,7 @@
             <img src="./assets/lifeonnutrition_presentation.png" class="image w-100">
             <div class="middle">
                 <div (click)="navigateToLifeOnNutrition()">
-                    <a class="fill-dark-white"><span class="ft-regular">MORE ABOUT LIFE ON NUTRITION</span></a>
+                    <a class="fill-dark-white-blue"><span class="ft-regular">MORE ABOUT LIFE ON NUTRITION</span></a>
                 </div>
             </div>
         </div>
@@ -101,7 +102,7 @@
             <img src="./assets/gooddonutwriting.png" class="image w-100">
             <div class="middle">
                 <div (click)="navigateToGoodDonutWriting()">
-                    <a class="fill-dark-white"><span class="ft-regular">MORE ABOUT GOOD DONUT WRITING</span></a>
+                    <a class="fill-dark-white-purple"><span class="ft-regular">MORE ABOUT GOOD DONUT WRITING</span></a>
                 </div>
             </div>
         </div>
@@ -117,20 +118,20 @@
     </div>
 </section>
 
-<section id="6" class="background-places" style="height: 100%; overflow: hidden;">
+<section id="6" class="background-bubble-trouble" style="height: 100%; overflow: hidden;">
     <div style="height: 100%; display: flex; align-items: center; justify-content: center;">  
-        <div class="container responsive-img-container pointer">
-            <img src="./assets/places.png" class="image w-100">
-            <!-- <div class="middle">
-                <div (click)="navigateToGoodDonutWriting()">
-                    <a class="fill-dark-white"><span class="ft-regular">MORE ABOUT PLACES</span></a>
+        <div class="container responsive-img-container pointer" (click)="navigateToBubbleTrouble()">
+            <img src="./assets/bubble_trouble.png" class="image w-100">
+            <div class="middle">
+                <div (click)="navigateToBubbleTrouble()">
+                    <a class="fill-dark-white-green"><span class="ft-regular">MORE ABOUT BUBBLE TROUBLE</span></a>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
     <div class="text-center pointer hide-on-phone" style="margin-top: -80px; position: relative;">
         <a href="#7">
-            <span class="ft-text" style="color: black">CONTACT</span>
+            <span class="ft-text" style="color: black">NEXT PROJECT</span>
         </a>
         <br>
         <a href="#7">
@@ -139,7 +140,29 @@
     </div>
 </section>
 
-<section id="7" style="height: 100%; overflow: hidden; height: 100%;">
+<section id="7" class="background-beehive" style="height: 100%; overflow: hidden;">
+    <div style="height: 100%; display: flex; align-items: center; justify-content: center;">  
+        <div class="container responsive-img-container pointer" (click)="navigateToBeeHive()">
+            <img src="./assets/beehive.png" class="image w-100">
+            <div class="middle">
+                <div (click)="navigateToBeeHive()">
+                    <a class="fill-dark-white-yellow"><span class="ft-regular">MORE ABOUT BEE HIVE</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center pointer hide-on-phone" style="margin-top: -80px; position: relative;">
+        <a href="#8">
+            <span class="ft-text" style="color: black">CONTACT</span>
+        </a>
+        <br>
+        <a href="#8">
+            <img src="https://img.icons8.com/ios-filled/24/000000/down.png"/>
+        </a>
+    </div>
+</section>
+
+<section id="8" style="height: 100%; overflow: hidden; height: 100%;">
     <div style="height: 100%; width: auto; display: flex; align-items: center; justify-content: center;"> 
         <div style="text-align: center; margin-top: 10vh; text-align: -webkit-center;">
             <div class="floating">

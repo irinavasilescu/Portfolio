@@ -41,14 +41,22 @@ export class PortfolioComponent implements OnInit {
 	}
 
 	navigateToShelves() {
-		this.router.navigate(['shelves']);
+		window.open("https://github.com/irinavasilescu/Shelves_Frontend");
 	}
 
 	navigateToLifeOnNutrition() {
-		this.router.navigate(['lifeonnutrition']);
+		window.open("https://lifeonnutrition.com/");
 	}
 
 	navigateToGoodDonutWriting() {
-		window.open("https://good-donut-test.tumblr.com/", '_blank');
+		window.open("https://gdwriting.tumblr.com/", '_blank');
+	}
+
+	navigateToBubbleTrouble() {
+		window.open("https://github.com/irinavasilescu/bubble_trouble", '_blank');
+	}
+
+	navigateToBeeHive() {
+		window.open("https://irinavasilescu.github.io/Beehive/", "_blank");
 	}
 }
